@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+*{
+    margin: 0; padding: 0; box-sizing: border-box; font-family: 'Mulish', sans-serif;
+}
+
+.navbar{
+    background: white!important;
+}
+
+.navbar-brand{
+    font-size: 2rem!important;
+    color: #565387!important;
+}
+
+.navbar a{
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.menu_active{
+    font-weight: bold;
+    border-bottom: 1px solid #565387;
+}
+
+.navbar a:hover{
+    color: #3498db!important;
+}
+
+@media (max-width:991px){
+    .navbar-brand{
+        font-size: 1.5rem !important;
+    }
+
+    .menu_active{
+        font-weight: bold;
+        border-bottom: none;
+    }
+}
+
+
+/* Main Landing Section */
+
+#header{
+    width: 100%;
+    height: 70vh;
+    margin-top: 70px;
+}
+
+#header h1{
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #000;
+}
+
+#header .brand-name{
+    color: #3498db;
+}
+
+#header h2{
+    font-size: 24px;
+    color: #484848;
+}
+
+#header .btn-get-started{
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+    color: #3498db;
+    text-decoration: none;
+    border: 2px solid #3498db;
+}
+
+#header .btn-get-started:hover{
+    background-color: #3498db;
+    color: white;
+}
+
+#header-img{
+    text-align: right;
+}
+
+#header .animated{
+    animation:up-down 2s ease-in-out infinite alternate-reverse both;
+    filter: drop-shadow(2px 2px 5px #900ae9);
+}
+
+.img-fluid{
+    max-width: 90% !important;
+}
+
+@keyframes up-down{
+    0%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
+}
+
+
+.card-img-top{
+    height: 275px;
+    width: 100%;
+}
+
+
+footer p{
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width:991px){
+    #header{
+        height: 80vh;
+        text-align: center;
+    }
+
+    #header .header-img{
+        text-align: center;
+    }
+
+    #header .header-img img{
+        width:60%;
+    }
+}
+
+@media (max-width:768px){
+    #header{
+        margin-top: 20px;
+    }
+
+    #header h1{
+        font-size: 28px;
+    }
+
+    #header h2{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    #header .header-img img{
+        width: 70%;
+    }
+}
